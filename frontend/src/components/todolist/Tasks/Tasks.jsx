@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from 'styled-components';
 import { createTask, deleteTask, editTask, fetchTasks, toggleTaskCompletion } from "../../../services/api/taskApi";
-import { editList } from "../../../services/api/ListApi";
+import { editList } from "../../../services/api/listApi";
 import PropTypes from 'prop-types';
 import TaskHeader from './TaskHeader';
 import TaskList from './TaskList'; 

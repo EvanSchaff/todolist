@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import SidebarHeader from './SidebarHeader';
 import ListItem from './ListItem';
 import AddList from './AddList';
-import { fetchLists, createList, deleteList } from '../../../services/api/ListApi';
+import { fetchLists, createList, deleteList } from '../../../services/api/listApi';
 import { logoutUser } from '../../../services/api/authApi';
 import styled from 'styled-components';
 
