@@ -3,6 +3,7 @@
 
 This project showcases basic levels in full-stack development, highlighting skills in React for the front-end, and Express.js for the backend. It includes an API that interacts seamlessly with a PostgreSQL database to manage the functionality. The application also implements secure token-based authentication, demonstrating a solid understanding of user authentication and authorization workflows. This project serves as a comprehensive example of building a scalable and responsive application from the ground up.
 
+You can view a live demo of the application here: https://todolist.evanschaff.com (Resets Daily)
 
 ## Features
 
