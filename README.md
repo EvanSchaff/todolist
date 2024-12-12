@@ -39,7 +39,7 @@ You can view a live demo of the application here: https://todolist.evanschaff.co
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to the .env file located in the root of either the frontend or backend folder.
 
 - Frontend
 `VITE_API_BASE_URL`
@@ -52,13 +52,13 @@ To deploy this project run
 
 - Frontend
 ```bash
-  docker build -t todolist-front
-  docker run -p 80:80 --name todolist-front-app todolist-front
+  docker build -t todolist-front .
+  docker run -d -p 80:80 --name todolist-front-app todolist-front
 ```
 - Backend
 ```bash
   npm run build
-  docker build -t todolist-back
-  docker run -p {EXPRESS_PORT}:{EXPRESS_PORT} --name todolist-back-app todolist-back
+  docker build -t todolist-back .
+  docker run -d -p {EXPRESS_PORT}:{EXPRESS_PORT} --name todolist-back-app todolist-back
 ```
 
