@@ -35,20 +35,6 @@ This project showcases basic levels in full-stack development, highlighting skil
   npm run build
   npm start
 ```
-## Deployment
-
-To deploy this project run
-
-- Frontend
-```bash
-  docker build -t todolist-front
-```
-- Backend
-```bash
-  npm run build
-  docker build -t todolist-back
-```
-
 
 ## Environment Variables
 
@@ -58,5 +44,20 @@ To run this project, you will need to add the following environment variables to
 `VITE_API_BASE_URL`
 
 - Backend
-`DB_USER` `DB_HOST` `DB_DATABASE` `DB_PASSWORD` `DB_PORT` `EXPRESS_PORT` `JWT_SECRET_KEY`
+`DB_USER` `DB_HOST` `DB_DATABASE` `DB_PASSWORD` `DB_PORT` `EXPRESS_PORT` `CORS_URL` `JWT_SECRET_KEY`
+## Deployment
+
+To deploy this project run
+
+- Frontend
+```bash
+  docker build -t todolist-front
+  docker run -p 80:80 --name todolist-front-app todolist-front
+```
+- Backend
+```bash
+  npm run build
+  docker build -t todolist-back
+  docker run -p {EXPRESS_PORT}:{EXPRESS_PORT} --name todolist-back-app todolist-back
+```
 
